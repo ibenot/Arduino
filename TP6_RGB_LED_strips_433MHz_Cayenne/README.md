@@ -52,7 +52,7 @@ How to control 2 RGB LED strips + turn on / off 433MHz power outlet with Cayenne
 | Chacon 3              | Living room lamp 2
 | Chacon 4              | Red room lamp
 
-![wiring](wiring.jpg)
+![wiring](wiring.JPG)
 
 ## Configuration
 
