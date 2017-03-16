@@ -2,13 +2,13 @@
 
 ## Summary
 
-- **Tuto 1**: How to control two RGB LED strips ?
-- **Tuto 2**: How to control RGB LED strip with IR remote ?
-- **Tuto 3**: How to decode 433MHz RF remote codes ?
-- **Tuto 4**: How to send 433MHz RF codes to power outlets ?
-- **Tuto 5**: How to make a simple dashboard for your 433Mhz power outlets ?
-- **Tuto 6**: How to control 2 LED strips + send 433MHz RF codes with Cayenne ?
-- **Tuto 7**: How to make a Flower Power like to your plants ?
+- **Tuto 1**: [How to control two RGB LED strips ?](TP1_Two_RGB_LED_strips)
+- **Tuto 2**: [How to control RGB LED strip with IR remote ?](TP2_IR_RGB_LED_strip)
+- **Tuto 3**: [How to decode 433MHz RF remote codes ?](TP3_433MHz_Receiver)
+- **Tuto 4**: [How to send 433MHz RF codes to power outlets ?](TP4_433MHz_Transmitter)
+- **Tuto 5**: [How to make a simple dashboard for your 433Mhz power outlets ?](TP5_433MHz_Dashboard)
+- **Tuto 6**: [How to control 2 LED strips + send 433MHz RF codes with Cayenne ?](TP6_RGB_LED_strips_433MHz_Cayenne)
+- **Tuto 7**: [How to make a Flower Power like to your plants ?](TP7_FlowerPower)
   
 ## Tuto 1: How to control two RGB LED strips ?
 
