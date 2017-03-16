@@ -1,6 +1,6 @@
-#Tuto 7: How to make a Flower Power like for your plants ?
+# Tuto 7: How to make a Flower Power like for your plants ?
 
-##Demo
+## Demo
 
 This [Flower Power](http://global.parrot.com/au/products/flower-power/) hack monitors and analyzes the four parameters essential to your plant's health into Cayenne dashboard.
 
@@ -8,7 +8,7 @@ This [Flower Power](http://global.parrot.com/au/products/flower-power/) hack mon
 
 ![How to make a Flower Power like to your plants ?](overview.gif)
 
-##Requirements
+## Requirements
 
   - 1 LED
   - 1 Photoresistor (for brightness)
@@ -20,7 +20,7 @@ This [Flower Power](http://global.parrot.com/au/products/flower-power/) hack mon
   - 1 9V external power supply
   - Jumpers / Breadboards
 
-##Wiring
+## Wiring
 
 | LED   | Arduino   
 |-------|-------
@@ -50,7 +50,7 @@ This [Flower Power](http://global.parrot.com/au/products/flower-power/) hack mon
 
 ![wiring](wiring2.jpg)
 
-##Configuration
+## Configuration
 
 Update this line with your custom values
 

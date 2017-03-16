@@ -1,18 +1,18 @@
-#Tuto 3: How to decode 433MHz RF remote codes ?
+# Tuto 3: How to decode 433MHz RF remote codes ?
 
-##Demo
+## Demo
 
 Example for receiving 433MHz codes from Chacon & Zap remotes using rc-switch library.
 
 ![How to decode 433MHz RF remote codes ?](overview.gif)
 
-##Requirements
+## Requirements
 - 1 Arduino UNO
 - 1 433MHz receiver
 - 1 433MHz remote
 - Jumpers / Breadboard
 
-##Wiring
+## Wiring
   
 | Receiver   | Arduino
 |------------|---------
@@ -22,11 +22,11 @@ Example for receiving 433MHz codes from Chacon & Zap remotes using rc-switch lib
 
 ![wiring](wiring1.jpg)
 
-##Appendix
+## Appendix
 
-###Remote codes
+### Remote codes
 
-####Zap remote
+#### Zap remote
 
 ```
 1: ON
@@ -71,7 +71,7 @@ Raw data: 5748,152,584,528,188,184,568,160,576,164,572,164,568,164,580,536,188,1
 
 ```
 
-####Chacon remote
+#### Chacon remote
 
 ```
 1: ON

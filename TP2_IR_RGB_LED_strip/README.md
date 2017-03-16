@@ -1,12 +1,12 @@
-#Tuto 2: How to control RGB LED strip with IR remote ?
+# Tuto 2: How to control RGB LED strip with IR remote ?
 
-##Demo
+## Demo
 
 How to decode IR remote and control RGB LED strip.
 
 ![How to control RGB LED strip with IR remote ?](overview.gif)
 
-##Requirements
+## Requirements
 - 1 Arduino UNO
 - 1 IR receiver
 - 1 IR remote
@@ -14,7 +14,7 @@ How to decode IR remote and control RGB LED strip.
 - 1 9V external power supply
 - Jumpers / Breadboard
 
-##Wiring
+## Wiring
 
 | IR Receiver     | Arduino   
 |-----------------|-------
@@ -32,11 +32,11 @@ How to decode IR remote and control RGB LED strip.
 
 ![wiring](wiring.jpg)
 
-##Appendix
+## Appendix
 
-###Remote codes
+### Remote codes
 
-####LED strip remote
+#### LED strip remote
 
 ```
 //red
@@ -91,7 +91,7 @@ Raw (68): 9000 -4400 600 -500 600 -550 550 -550 600 -500 600 -500 600 -550 600 -
 
 ```
 
-####Samsung TV remote
+#### Samsung TV remote
 
 ```
 //vol +
@@ -156,7 +156,7 @@ Raw (68): 4500 -4400 600 -1650 550 -1650 550 -1650 600 -500 600 -500 600 -550 55
 
 ```
 
-####Sony speaker remote
+#### Sony speaker remote
 
 ```
 //play

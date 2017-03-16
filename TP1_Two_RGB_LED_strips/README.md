@@ -1,12 +1,12 @@
-#Tuto 1: How to control two RGB LED strips ?
+# Tuto 1: How to control two RGB LED strips ?
 
-##Demo
+## Demo
 
 How to control two RGB LED strips with an Arduino and show results in Arduino IDE serial monitor.
 
 ![How to control two RGB LED strips ?](overview.gif)
     
-##Requirements
+## Requirements
 - 1 Arduino UNO
 - 2 x ULN2803
 - 2 RGB 5050 LED strips
@@ -14,7 +14,7 @@ How to control two RGB LED strips with an Arduino and show results in Arduino ID
 - 1 12V external power supply
 - Jumpers / Breadboard
 
-##Wiring
+## Wiring
 
 | ULN2803 1   | Arduino   
 |-------------|----------------------------

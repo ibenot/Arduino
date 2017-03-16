@@ -1,17 +1,17 @@
-#Tuto 5: How to make a simple dashboard for your 433Mhz power outlets ?
+# Tuto 5: How to make a simple dashboard for your 433Mhz power outlets ?
 
-##Demo
+## Demo
 
 Example for turning on / off Chacon & Zap power outlet with Cayenne dashboard
 
 ![How to send 433MHz RF codes to power outlets ?](overview.gif)
 
-##Requirements
+## Requirements
 - 1 Arduino UNO
 - 1 433MHz transmitter
 - Jumpers / Breadboard
 
-##Wiring
+## Wiring
 
 | Transmitter | Arduino   | Wemos D1
 |-------------|-----------|----------
@@ -19,7 +19,7 @@ Example for turning on / off Chacon & Zap power outlet with Cayenne dashboard
 | GND         | GND       | GND
 | DATA        | D10       | D1
 
-##Configuration
+## Configuration
 
 Please get your personal remote codes from [TP3 433MHz Receiver](../TP3_433MHz_Receiver) and add them to "Chacon power outlet codes" section.
   

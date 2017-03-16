@@ -1,12 +1,12 @@
-#Tuto 6: How to control 2 LED strips + send 433MHz RF codes with Cayenne ?
+# Tuto 6: How to control 2 LED strips + send 433MHz RF codes with Cayenne ?
 
-##Demo
+## Demo
 
 How to control 2 RGB LED strips + turn on / off 433MHz power outlet with Cayenne dashboard
 
 ![How to control 2 LED strips + send 433MHz RF codes with Cayenne ?](overview.gif)
 
-##Requirements
+## Requirements
 
 - 2 RGB 5050 LED strips
 - 2 RGB 5050 LED strips connectors
@@ -18,7 +18,7 @@ How to control 2 RGB LED strips + turn on / off 433MHz power outlet with Cayenne
 - N 433MHz power outlet (Chacon & Zap)
 - Jumpers / Breadboard
 
-##Wiring
+## Wiring
 
 | 433 Transmitter | Wemos D1   
 |-----------------|-------
@@ -54,7 +54,7 @@ How to control 2 RGB LED strips + turn on / off 433MHz power outlet with Cayenne
 
 ![wiring](wiring.jpg)
 
-##Configuration
+## Configuration
 
 Please get your personal remote codes from [TP3 433MHz Receiver](../TP3_433MHz_Receiver) and add them to "Chacon power outlet codes" section.
   
