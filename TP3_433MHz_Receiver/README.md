@@ -22,6 +22,10 @@ Example for receiving 433MHz codes from Chacon & Zap remotes using rc-switch lib
 
 ![wiring](wiring1.jpg)
 
+## Video
+
+[![Alt Video](https://img.youtube.com/vi/6-827A7Ncaw/0.jpg)](https://www.youtube.com/watch?v=6-827A7Ncaw)
+
 ## Appendix
 
 ### Remote codes

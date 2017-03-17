@@ -32,6 +32,10 @@ How to decode IR remote and control RGB LED strip.
 
 ![wiring](wiring.jpg)
 
+## Video
+
+[![Alt Video](https://img.youtube.com/vi/6osMbB5GiOw/0.jpg)](https://www.youtube.com/watch?v=6osMbB5GiOw)
+
 ## Appendix
 
 ### Remote codes

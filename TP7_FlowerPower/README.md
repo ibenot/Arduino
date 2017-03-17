@@ -50,6 +50,10 @@ This [Flower Power](http://global.parrot.com/au/products/flower-power/) hack mon
 
 ![wiring](wiring2.jpg)
 
+## Video
+
+[![Alt Video](https://img.youtube.com/vi/DpATZUCZu0Q/0.jpg)](https://www.youtube.com/watch?v=DpATZUCZu0Q)
+
 ## Configuration
 
 Update this line with your custom values

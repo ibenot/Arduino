@@ -19,6 +19,10 @@ Example for turning on / off Chacon & Zap power outlet with Cayenne dashboard
 | GND         | GND       | GND
 | DATA        | D10       | D1
 
+## Video
+
+[![Alt Video](https://img.youtube.com/vi/9xBKRz43rQ4/0.jpg)](https://www.youtube.com/watch?v=9xBKRz43rQ4)
+
 ## Configuration
 
 Please get your personal remote codes from [TP3 433MHz Receiver](../TP3_433MHz_Receiver) and add them to "Chacon power outlet codes" section.

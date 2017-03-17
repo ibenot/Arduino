@@ -20,3 +20,7 @@ Example for sending code from Arduino to Chacon power outlets.
 | DATA        | D10       | D1
 
 ![wiring](wiring1.jpg)
+
+## Video
+
+[![Alt Video](https://img.youtube.com/vi/LC9KjKzs1DM/0.jpg)](https://www.youtube.com/watch?v=LC9KjKzs1DM)

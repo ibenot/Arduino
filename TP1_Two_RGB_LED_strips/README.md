@@ -33,3 +33,8 @@ How to control two RGB LED strips with an Arduino and show results in Arduino ID
 | GREEN       | D11 
 
 
+## Video
+
+[![Alt Video](https://img.youtube.com/vi/r9Jx8079knY/0.jpg)](https://www.youtube.com/watch?v=r9Jx8079knY)
+
+

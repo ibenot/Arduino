@@ -7,6 +7,7 @@
 - **Tuto 5**: [How to make a simple dashboard for your 433Mhz power outlets ?](TP5_433MHz_Dashboard)
 - **Tuto 6**: [How to control 2 LED strips + send 433MHz RF codes with Cayenne ?](TP6_RGB_LED_strips_433MHz_Cayenne)
 - **Tuto 7**: [How to make a Flower Power like to your plants ?](TP7_FlowerPower)
+- **[YouTube playlist](https://www.youtube.com/playlist?list=PLCeQOPohmBQLv9OxJ1JZnUnjsFsE_4C2X)**
   
 # Tuto 1: How to control two RGB LED strips ?
 
@@ -161,3 +162,31 @@ This [Flower Power](http://global.parrot.com/au/products/flower-power/) hack mon
 ## Code
 
 [Readme & source code here](TP7_FlowerPower)
+
+---------
+
+# Videos
+
+- [YouTube playlist](https://www.youtube.com/playlist?list=PLCeQOPohmBQLv9OxJ1JZnUnjsFsE_4C2X)
+
+- **Tuto 1**: [How to control two RGB LED strips ?](https://www.youtube.com/watch?v=r9Jx8079knY)
+[![Alt Video](https://img.youtube.com/vi/r9Jx8079knY/0.jpg)](https://www.youtube.com/watch?v=r9Jx8079knY)
+
+- **Tuto 2**: [How to control RGB LED strip with IR remote ?](https://www.youtube.com/watch?v=6osMbB5GiOw)
+[![Alt Video](https://img.youtube.com/vi/6osMbB5GiOw/0.jpg)](https://www.youtube.com/watch?v=6osMbB5GiOw)
+
+- **Tuto 3**: [How to decode 433MHz RF remote codes ?](https://www.youtube.com/watch?v=6-827A7Ncaw)
+[![Alt Video](https://img.youtube.com/vi/6-827A7Ncaw/0.jpg)](https://www.youtube.com/watch?v=6-827A7Ncaw)
+
+- **Tuto 4**: [How to send 433MHz RF codes to power outlets ?](https://www.youtube.com/watch?v=LC9KjKzs1DM)
+[![Alt Video](https://img.youtube.com/vi/LC9KjKzs1DM/0.jpg)](https://www.youtube.com/watch?v=LC9KjKzs1DM)
+
+- **Tuto 5**: [How to make a simple dashboard for your 433Mhz power outlets ?](https://www.youtube.com/watch?v=9xBKRz43rQ4)
+[![Alt Video](https://img.youtube.com/vi/9xBKRz43rQ4/0.jpg)](https://www.youtube.com/watch?v=9xBKRz43rQ4)
+
+- **Tuto 7**: [How to make a Flower Power like to your plants ?](https://www.youtube.com/watch?v=DpATZUCZu0Q)
+[![Alt Video](https://img.youtube.com/vi/DpATZUCZu0Q/0.jpg)](https://www.youtube.com/watch?v=DpATZUCZu0Q)
+
+
+
+
