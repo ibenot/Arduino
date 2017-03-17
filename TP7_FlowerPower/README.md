@@ -67,3 +67,19 @@ and create this virtal pins in your Cayenne dashboard
 #define VIRTUAL_PIN_4 V4   //humidity
 #define VIRTUAL_PIN_12 V12 //brightness
 ```
+
+## Shopping
+
+- 1 LED = 0.20 €
+- 1 Photoresistor (for brightness) = 0.59 €
+- 1 DHT11 (for temperature + humidity) = 2.20 €
+- 1 Water sensor (for soil moisture) = 2.50 €
+- 2 Resistors = 0.20 €
+
+Total price: 5.69 €
+
+- 1 Arduino UNO "like"
+- 1 Ethernet shield
+- 1 9V external power supply
+- Jumpers / Breadboards
+
