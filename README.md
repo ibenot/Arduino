@@ -7,6 +7,9 @@
 - **Tuto 5**: [How to make a simple dashboard for your 433Mhz power outlets ?](TP5_433MHz_Dashboard)
 - **Tuto 6**: [How to control 2 LED strips + send 433MHz RF codes with Cayenne ?](TP6_RGB_LED_strips_433MHz_Cayenne)
 - **Tuto 7**: [How to make a Flower Power like to your plants ?](TP7_FlowerPower)
+- **Tuto 8**: [How to send IR code with an Arduino ?](TP8_IR_Sender)
+
+
 - **[YouTube playlist](https://www.youtube.com/playlist?list=PLCeQOPohmBQLv9OxJ1JZnUnjsFsE_4C2X)**
   
 # Tuto 1: How to control two RGB LED strips ?
@@ -164,6 +167,32 @@ This [Flower Power](http://global.parrot.com/au/products/flower-power/) hack mon
 [Readme & source code here](TP7_FlowerPower)
 
 ---------
+
+# Tuto 8: How to send IR code with an Arduino ?
+
+## Demo
+
+This sketch sends IR codes to control devices :
+
+- Samsung TV
+- Sony speaker system 
+- LED Strip with IR receiver
+- and all other IR devices (Working with a simple IR remote control)
+
+![wiring](TP8_IR_Sender/wiring.jpg)
+
+## Requirements
+
+  - 1 IR LED
+  - 1 Arduino UNO
+  - 1 mini breadboard
+  - Jumpers
+
+## Code
+
+[Readme & source code here](TP8_IR_Sender)
+
+-----
 
 # Videos
 

@@ -9,7 +9,7 @@ This sketch sends IR codes to control devices :
 - LED Strip with IR receiver
 - and all other IR devices (Working with a simple IR remote control)
 
-![How to make a Flower Power like to your plants ?](overview.jpg)
+![How to send IR code with an Arduino](overview.jpg)
 
 ## Requirements
 
