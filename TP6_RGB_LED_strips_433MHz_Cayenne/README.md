@@ -1,32 +1,45 @@
-# Tuto 6: How to control 2 LED strips + send 433MHz RF codes with Cayenne ?
+# Tuto 6: How to control 2 LED strips + send 433MHz RF codes + IR with Cayenne ?
 
 ## Demo
 
-How to control 2 RGB LED strips + turn on / off 433MHz power outlet with Cayenne dashboard
+How to control 2 RGB LED strips + turn on / off 433MHz power outlet with Cayenne dashboard + IR transmitter
 
+Example for turning on / off Chacon & Zap power outlet with Cayenne dashboard
+
+Please get your personal remote codes from TP3_433MHz_Receiver and add them to "Chacon power outlet codes" section.
+
+Update:
+  This sketch sends IR codes to control devices
+  
+- Samsung TV
+- Sony speaker system 
+- LED Strip with IR receiver
+- and all other IR devices (Working with a simple IR remote control)
+ 
 ![How to control 2 LED strips + send 433MHz RF codes with Cayenne ?](overview.gif)
 
 ## Requirements
 
-- 2 RGB 5050 LED strips
-- 2 RGB 5050 LED strips connectors
+- 2 RGB 5050 LED Strips
+- 433MHz power outlet (Chacon & Zap)
+- 433MHz transmitter
+- 1 IR LED
+- Arduino Ethernet shield or 
+- Wemos D1 Wifi (based on esp8266) or
+- Arduino wifi esp8266 module
+- 9V / 12V external power supply
+- Wago connectors
 - 2 ULN2803
-- 1 433MHz transmitter
-- 1 Arduino Ethernet shield or Wemos D1 Wifi or esp8266 module
-- 1 9V / 12V external power supply
-- N Wago connectors
-- N 433MHz power outlet (Chacon & Zap)
-- Jumpers / Breadboard
 
 ## Wiring
 
-| 433 Transmitter | Wemos D1   
-|-----------------|-------
+| 433 Transmitter | Wemos D1 (ESP8266)   
+|-----------------|-------------------
 | VCC             | 5V (Arduino 5V)        
 | GND             | GND       
-| DATA            | D10 
+| DATA            | D1 
 
-| ULN2803 1   | Wemos D1   
+| ULN2803 1   | Wemos D1 (ESP8266)   
 |-------------|----------------------------
 | VIN         | 12V (External power supply)
 | GND         | GND       
@@ -34,13 +47,18 @@ How to control 2 RGB LED strips + turn on / off 433MHz power outlet with Cayenne
 | RED         | D5 
 | GREEN       | D6
 
-| ULN2803 2   | Wemos D1   
+| ULN2803 2   | Wemos D1 (ESP8266)   
 |-------------|----------------------------
 | VIN         | 12V (External power supply)
 | GND         | GND       
 | BLUE        | D9 
 | RED         | D10 
 | GREEN       | D11 
+
+| IR LED | Wemos D1 (ESP8266)   
+|--------|-------------------
+| -      | GND       
+| +      | D4 
 
 | 433MHz power outlet   | Device   
 |-----------------------|--------------------
@@ -52,7 +70,11 @@ How to control 2 RGB LED strips + turn on / off 433MHz power outlet with Cayenne
 | Chacon 3              | Living room lamp 2
 | Chacon 4              | Red room lamp
 
-![wiring](wiring.JPG)
+![wiring](wiring1.jpg)
+
+![wiring](wiring2.jpg)
+
+![wiring](wiring3.jpg)
 
 ## Configuration
 

@@ -1,14 +1,22 @@
 /*
   
-  How to control 2 RGB LED strips + turn on / off 433MHz power outlet with Cayenne dashboard
+  How to control 2 RGB LED strips + turn on / off 433MHz power outlet with Cayenne dashboard + IR transmitter
 
   Example for turning on / off Chacon & Zap power outlet with Cayenne dashboard
   Please get your personal remote codes from TP3_433MHz_Receiver and add them to "Chacon power outlet codes" section.
+
+  Update:
+  This sketch sends IR codes to control devices
+  - Samsung TV
+  - Sony speaker system 
+  - LED Strip with IR receiver
+  - and all other IR devices (Working with a simple IR remote control)
   
   Requirements:
   - 2 RGB 5050 LED Strips
   - 433MHz power outlet (Chacon & Zap)
   - 433MHz transmitter
+  - 1 IR LED
   - Arduino Ethernet shield or 
   - Wemos D1 Wifi (based on esp8266) or
   - Arduino wifi esp8266 module
@@ -20,27 +28,32 @@
   /!\ Please insert your custom Token (Your Cayenne account).
   /!\ Please insert your custom SSID + Password (Your wifi credentials).
   
-  | 433 Transmitter | Wemos   
-  |-----------------|-------
+  | 433 Transmitter | Wemos D1 (ESP8266)   
+  |-----------------|-------------------
   | VCC             | 5V (Arduino 5V)        
   | GND             | GND       
-  | DATA            | D10 
+  | DATA            | D1 
 
-  | ULN2803 1   | Wemos   
+  | ULN2803 1   | Wemos D1 (ESP8266)   
   |-------------|----------------------------
   | VIN         | 12V (External power supply)
   | GND         | GND       
-  | BLUE        | 3 
-  | RED         | 5 
-  | GREEN       | 6
+  | BLUE        | D3 
+  | RED         | D5 
+  | GREEN       | D6
 
-  | ULN2803 2   | Wemos   
+  | ULN2803 2   | Wemos D1 (ESP8266)   
   |-------------|----------------------------
   | VIN         | 12V (External power supply)
   | GND         | GND       
-  | BLUE        | 9 
-  | RED         | 10 
-  | GREEN       | 11 
+  | BLUE        | D9 
+  | RED         | D10 
+  | GREEN       | D11 
+
+  | IR LED | Wemos D1 (ESP8266)   
+  |--------|-------------------
+  | -      | GND       
+  | +      | D4 
 
   | 433MHz power outlet   | Device   
   |-----------------------|--------------------
@@ -61,6 +74,7 @@
 #include "BlynkSimpleEsp8266.h"
 #include "CayenneWiFiClient.h"
 #include "RCSwitch.h"
+#include "IRremoteESP8266.h"
 
 char token[] = "XXXXXXXXXXXXXXXX";   // /!\ Enter your Cayenne token here
 char ssid[] = "XXXXXXXXXXXXXXXXX";   // /!\ Enter your Wifi name here
@@ -104,6 +118,12 @@ int loadingTimeChaconZap = 20000;   //enable 433MHz 20 seconds after board boot
 #define VIRTUAL_PIN_21 V21  //theme 2: medium brightness
 #define VIRTUAL_PIN_22 V22  //theme 3: max brightness
 
+//IR LED lamp
+#define VIRTUAL_PIN_23 V23  //IR LED lamp
+
+//Samsung TV
+#define VIRTUAL_PIN_24 V24  //TV
+
 //433MHz
 RCSwitch mySwitch = RCSwitch();
 int transmit_pin = 1;        //10 for Arduino / 1 for Wemos D1
@@ -131,6 +151,17 @@ byte fadeIncrement = 5;           // How smooth to fade?
 unsigned long previousFadeMillis; // millis() timing Variable, just for fading
 int fadeInterval = 100;           // How fast to increment?
 int fademode = 0;                 //set default fademode value to false
+
+//Required defines for IR Samsung monitoring
+#define SAMSUNG_BITS 32
+#define SAMSUNG_HDR_MARK 4500
+#define SAMSUNG_HDR_SPACE 4250
+#define SAMSUNG_BIT_MARK 600
+#define SAMSUNG_ONE_SPACE 1400
+#define SAMSUNG_ZERO_SPACE 450
+
+//an IR emitter led is connected to GPIO pin 4
+IRsend irsend(4);
 
 /*
  * Setup
@@ -163,6 +194,9 @@ void setup()
   analogWrite(LED_STRIP_2_RED, 0); 
   analogWrite(LED_STRIP_2_GREEN, 255); 
   analogWrite(LED_STRIP_2_BLUE, 0);
+
+  //IR
+  irsend.begin();
 
   //Cayenne
   Cayenne.begin(token, ssid, password);
@@ -474,6 +508,33 @@ CAYENNE_IN(VIRTUAL_PIN_22) {
       set_brightness_max_theme(); 
     }
   }
+}
+
+//IR Slider
+CAYENNE_IN(VIRTUAL_PIN_23) { 
+  if(millis() > loadingTimeChaconZap){
+    
+    float currentValue = getValue.asDouble();
+    currentValue = currentValue / 1023;
+    
+    if(currentValue == 85){
+      irsend.sendNEC(0xFF1AE5, 32); 
+    }
+    if(currentValue == 170){
+      irsend.sendNEC(0xFF9A65, 32); 
+    }
+    if(currentValue == 255){
+      irsend.sendNEC(0xFFA25D, 32); 
+    }
+  }
+}
+
+//TV
+CAYENNE_IN(VIRTUAL_PIN_24) { 
+  int khz = 38;
+  //mute tv
+  unsigned int irSignal[] = {4500,4400,600,1650,600,1600,600,1600,600,500,600,500,600,550,600,500,600,500,600,1600,600,1650,550,1650,600,500,600,500,600,500,600,500,600,550,550,1650,600,1600,600,1600,600,1650,600,500,600,500,600,500,600,500,600,500,600,550,550,550,600,500,600,1600,600,1600,600,1650,600,1600,600};    
+  irsend.sendRaw(irSignal, sizeof(irSignal) / sizeof(irSignal[0]), khz); 
 }
 
 /*
